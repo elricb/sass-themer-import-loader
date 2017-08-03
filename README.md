@@ -1,8 +1,6 @@
 # sass-themer-import
 
-## About
-
-Creates a list of scss @import statements prior to sass parsing.  Intended to be run prior to the sass-loader [link](https://github.com/webpack-contrib/sass-loader).
+Creates a list of scss @import statements prior to sass parsing.  Intended to be run prior to the  [sass-loader](https://github.com/webpack-contrib/sass-loader).
 
 ## Options & Defaults
 

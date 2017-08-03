@@ -1,0 +1,19 @@
+{
+  "name": "@elricb/sass-themer-import",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elricdesigns/sass-themer-import.git"
+  },
+  "author": "elricb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elricdesigns/sass-themer-import/issues"
+  },
+  "homepage": "https://github.com/elricdesigns/sass-themer-import#readme"
+}

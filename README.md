@@ -2,6 +2,8 @@
 
 Creates a list of scss @import statements prior to sass parsing.  Intended to be run prior to the  [sass-loader](https://github.com/webpack-contrib/sass-loader).
 
+Allows you to pass in environment variables and use different loaders for the first scss file; e.g. can be used by dynamic css loaders.
+
 ## Options & Defaults
 
 ### Replace (optional)
@@ -21,13 +23,11 @@ The below example replaces instances of "#{VAR1}" with the defined HOST and "#{V
     }
 ```
 
-
 ## Sample Of use
 
 ### webpack.config.js
 
 Inside your webpack config (webpack.config.js). Add the loader and set your options.
-
 
 ```javascript
 export.default = {
@@ -69,9 +69,9 @@ export.default = {
 };
 ```
 
-### scss.json
+### myfile.scss.json
 
-This file is in json array format.  Inside your sass.json file (or whatever you want to name it), set the path to your sass file (without the .scss).
+This file is in json array format.  Inside your .scss.json file (or whatever you want to name it), set the path to your sass file (without the .scss).
 ```json
 [
     "~public/scss/themes/default/${TEST}/index",

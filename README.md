@@ -1,4 +1,4 @@
-# sass-themer-import
+# sass-themer-import-loader
 
 Creates a list of scss @import statements prior to sass parsing.  Intended to be run prior to the  [sass-loader](https://github.com/webpack-contrib/sass-loader).
 
@@ -13,7 +13,7 @@ Allows you to pass in environment variables and use different loaders for the fi
 The below example replaces instances of "#{VAR1}" with the defined HOST and "#{VAR2}" with "test".
 
 ```javascript
-    loader: 'sass-themer-loader',
+    loader: 'sass-themer-import-loader',
     options: {
         replace: {
             '#{VAR1}': process.env.HOST,
@@ -55,7 +55,7 @@ export.default = {
                     options: {}
                 },
                 {
-                    loader: 'sass-themer-import',
+                    loader: 'sass-themer-import-loader',
                     options: {
                         replace: {
                             '${ENV}' : process.env.npm_lifecycle_event,

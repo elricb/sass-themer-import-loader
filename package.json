@@ -1,19 +1,19 @@
 {
-  "name": "@elricb/sass-themer-import",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@elricb/sass-themer-import-loader",
+  "version": "2.0.1",
+  "description": "Creates a list of scss @import statements prior to sass parsing.  Intended to be run prior to the  [sass-loader](https://github.com/webpack-contrib/sass-loader).",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elricdesigns/sass-themer-import.git"
+    "url": "git+https://github.com/elricdesigns/sass-themer-import-loader.git"
   },
   "author": "elricb",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/elricdesigns/sass-themer-import/issues"
+    "url": "https://github.com/elricdesigns/sass-themer-import-loader/issues"
   },
-  "homepage": "https://github.com/elricdesigns/sass-themer-import#readme"
+  "homepage": "https://github.com/elricdesigns/sass-themer-import-loader#readme"
 }

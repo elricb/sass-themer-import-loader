@@ -11,7 +11,7 @@ module.exports = function (source) {
             },
             loaderUtils.getOptions
                 ? loaderUtils.getOptions(this)
-                : loaderUtils.parseQuery(this.resourceQuery)
+                : loaderUtils.parseQuery(this.query)
         ),
         themes = JSON.parse(source) || null,
         output = []
@@ -25,11 +25,15 @@ module.exports = function (source) {
     themes.map(function ($_theme) {
         output.push(
             '@import "'
-            + options.replace ? replaceMap($_theme, options.replace) : $_theme
+            + (options.replace ? replaceMap($_theme, options.replace) : $_theme)
             + post
             + '";'
         );
     });
 
-    return output.join();
+    if (options.test) {
+        console.log("\nsass-themer-import-loader:" + output.join('') + "\n");
+    }
+
+    return output.join('');
 }
